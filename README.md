@@ -1,3 +1,1 @@
-# script.js
-hii
-hii
+coman css and js
