@@ -1,4 +1,4 @@
-// js start code
+gg// js start code
 $(document).ready(function() {
 
 });
@@ -62,7 +62,7 @@ $(window).scroll(function() {
 });
 
 
-// scroll animation amg and text
+// scroll animation img and text
 $(window).scroll(function() {
     var PosintionTop = $(document).scrollTop();
     console.log(PosintionTop);
