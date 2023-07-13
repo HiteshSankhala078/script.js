@@ -1,4 +1,4 @@
-gg// js start code
+// js start code
 $(document).ready(function() {
 
 });
