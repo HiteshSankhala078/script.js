@@ -13,6 +13,22 @@ $('.nav__toggle').click(function() {
 });
 
 
+// menu toggle 
+$(document).ready(function() {
+    $(window).scroll(function() {
+        var height = $(window).scrollTop();
+        if (height > 100) {
+            $(".site-header").addClass("headerup");
+        } else {
+            $(".site-header").removeClass("headerup");
+        }
+    });
+    $(".menu-toggle").click(function() {
+        $(this).toggleClass("on");
+        $(".navbar").slideToggle();
+    });
+
+
 // owl slider  
 $('#owl2').owlCarousel({
     // stagePadding: 50,
@@ -76,11 +92,18 @@ $(window).scroll(function() {
 });
 
 
-// go-to-top fixe btn smooth scroll top (class="go-to-top")
-$('.go-to-top').click(function() {
-    $("html, body").animate({ scrollTop: 0 }, "slow");
-    return false;
-});
+ // scrolltop
+    $('.scrolltotop').click(function() {
+        $('html, body').animate({ scrollTop: 0 }, 800);
+        return false;
+    });
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > 300) {
+            $('.scrolltotop').fadeIn();
+        } else {
+            $('.scrolltotop').fadeOut();
+        }
+    });
 
 
 //(checkbox) btn click price number change month to year
